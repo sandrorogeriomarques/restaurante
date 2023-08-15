@@ -80,12 +80,12 @@ var mapOptions = {
             
             // Obter distância e tempo Saídas
             const output = document.querySelector('#output');
-            output.innerHTML =
-              result.routes[0].legs[0].distance.text;
+            output.innerHTML = "<img src='img/distance (4).png'>" +
+            "&nbsp;&nbsp;&nbsp;"+result.routes[0].legs[0].distance.text;
             
             const output2 = document.querySelector('#output2');
-            output2.innerHTML =              
-              result.routes[0].legs[0].duration.text;
+            output2.innerHTML = "<img src='img/clock (1).png'>" +
+              "&nbsp;&nbsp;&nbsp;"+result.routes[0].legs[0].duration.text;
   
             // display route
             directionsDisplay.setDirections(result);

@@ -8,12 +8,21 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+h1 {
+    color: white;
+}
+h2 {
+    color: rgb(0, 0, 0);
+}
 
 .header {
+    position:sticky;
+    top:-185px;
+    z-index: 2;
     display: flex;
     flex-flow: row wrap;
-    justify-content: start;
-    align-items: center;
+    justify-content:center;
+    align-items:end;
     width: 100%;
     height: 300px;
     /* border: 1px solid red; */
@@ -21,47 +30,58 @@ body {
     background-size: cover;
     background-position: center;
 }
-
-.tempo {
-    flex: 100%;
+.header-bar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
     background-color: black;
     opacity: 0.8;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 8px;
-}
-.title {
-    margin-left: 10%;
+    padding: 10px 0px 10px 30px;
+    align-items:end;
+    position:sticky;
+    top:0px;
+    width: 100%;
+
 }
 
-.tab {
+.clima {
+    flex: 80%;
+}
+.title {
+    flex: 20%;
+}
+
+.cards {
     /* border: 1px solid red; */
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 30px;
-    padding: 1px;
+    border-radius: 8px;
+    padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* Estilos do rodapé */
-footer {
-    background-color: #000000;
-    /* Cor de fundo do rodapé */
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    margin-top: 30px;
-}
+
 
 /* Estilos das abas */
 .tab-container {
-    text-align: center;
+    text-align:start;
+}
+.title-controls {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
 }
 
 .tabs {
-    display: flex;
-    justify-content: center;
+    /* border: 1px solid red;  */
+    flex: 50%;
+    text-align: right;
+}
+.title-cards {
+    /* border: 1px solid red; */
+    flex: 50%;
 }
 
 .tab-button {
@@ -78,11 +98,47 @@ footer {
     /* Cor de fundo das abas ativas */
 }
 
+.info-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+}
+.info-text {
+    /* border: 1px solid red; */
+    flex: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+}
+.distancia {
+    /* border: 1px solid blue; */
+    flex: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:start;
+    align-items: center;
+}
+.tempo {
+    /* border: 1px solid blue; */
+    flex: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:start;
+    align-items: center;
+}
+.info-btn {
+    /* border: 1px solid red; */
+    flex: 50%;
+    text-align: right;
+}
+
 /* Estilos dos conteúdos das abas */
 .tab-content {
     display: none;
     padding: 1px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .tab-content.active {
@@ -96,18 +152,21 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+    width: 100%;
+    margin-top: 50px;
 }
 .contact-btn{
     display: inline-block;
-    background: #FF2978;
+    background: #000000;
     width:200px;
     padding: 15px 0 15px 0;
     color:white;
     text-transform: uppercase;
     border-radius:5px;
     text-decoration: none;
+    text-align: center;
 }
 
 .contact-btn:hover{
-    background:#180F4A;
+    background:#0B1E08;
 }
