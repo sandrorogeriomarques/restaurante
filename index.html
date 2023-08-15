@@ -7,6 +7,7 @@
     <meta name="description" content="Informações do restaurante">
     <meta name="keywords" content="Agencia Digital, CSS, HTML">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
     <style>
         /*map*/
         #googleMap {
@@ -24,12 +25,9 @@
                 <h1>Constantino</h1>
             </div>
             <div class="clima">
-                <a class="weatherwidget-io" href="https://forecast7.com/pt/n25d43n49d27/curitiba/"
-                    data-label_1="CURITIBA" data-label_2="Clima" data-icons="Climacons Animated"
-                    data-textcolor="#ffffff" data-suncolor="#eeff00" data-mooncolor="#fff81c" data-cloudfill="#90c8f4"
-                    data-raincolor="#0063fc">CURITIBA Clima</a>
+                <a class="weatherwidget-io" href="https://forecast7.com/pt/n25d43n49d27/curitiba/" data-label_1="Curitiba" data-label_2="Clima" data-theme="original" data-basecolor="rgba(31, 86, 124, 0)" >Curitiba Clima</a>
                 <script>
-                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
                 </script>
             </div>
         </div>
@@ -60,10 +58,10 @@
                         </div>
                         <div class="info-btn">
                             <a href="https://maps.google.com/maps/dir//Av.+Jos%C3%A9+Gulin,+105+-+Bacacheri+Curitiba+-+PR+82600-360/@-25.3935803,-49.2256114,18z/data=!4m5!4m4!1m0!1m2!1m1!1s0x94dce67501a822d1:0x76f5a9190f1c3ac8"
-                                class="contact-btn" target="_blank"><img src="img/google-maps (4).png" alt=""> Google
+                                class="contact-btn" target="_blank"><img src="img/google-maps (4).png" alt="" width='20'> Google
                                 Maps</a>
                             <a href="https://waze.com/ul?ll=-25.393572,-49.225727&navigate=yes" class="contact-btn"
-                                target="_blank"><img src="img/waze (2).png" alt=""> Waze</a>
+                                target="_blank"><img src="img/waze (2).png" alt="" width='20'> Waze</a>
                         </div>
                     </div>
                 </div>
@@ -95,9 +93,7 @@
             <div class="title-cards">
                 <h2>Estátisticas de entrgas</h2>
             </div>
-            <iframe title="graficosite" width="100%" height="636"
-                src="https://app.powerbi.com/view?r=eyJrIjoiMzBhOGJmZTMtNTdiZS00ODdjLWI5ZDUtODNmNmEwMGQwNTZkIiwidCI6IjViN2UyY2NjLWFiODctNGJmNC1hNDUzLWFjNTY0NDE4ODYyOSJ9"
-                frameborder="0" allowFullScreen="true"></iframe>
+            <iframe title="Report Section" width="100%" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiYTFlYjkwMGItOTViMy00ODkxLWJlMjUtMzU4MWI1YjUzYTRkIiwidCI6IjViN2UyY2NjLWFiODctNGJmNC1hNDUzLWFjNTY0NDE4ODYyOSJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
         </div>
     </section>
     <footer>

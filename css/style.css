@@ -17,7 +17,7 @@ h2 {
 
 .header {
     position:sticky;
-    top:-185px;
+    top:-210px;
     z-index: 2;
     display: flex;
     flex-flow: row wrap;
@@ -36,7 +36,7 @@ h2 {
     justify-content:center;
     background-color: black;
     opacity: 0.8;
-    padding: 10px 0px 10px 30px;
+    /* padding: 10px 0px 10px 30px; */
     align-items:end;
     position:sticky;
     top:0px;

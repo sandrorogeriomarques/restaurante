@@ -1,0 +1,52 @@
+@media screen and (max-width:1005px) {
+    .cards {
+        /* border: 1px solid red; */
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30px;
+        border-radius: 8px;
+        padding: 5px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+    .info-btn {
+        /* border: 1px solid red; */
+        flex: 100%;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .info-text {
+        /* border: 1px solid red; */
+        flex: 100%;
+        margin-left: 15%;
+    }
+    .distancia {
+        /* border: 1px solid blue; */
+        flex: 50%;
+    }
+    .tempo {
+        /* border: 1px solid blue; */
+        flex: 50%;
+    }
+    .title-cards {
+        /* border: 1px solid red; */
+        flex: 100%;
+    }
+    .tabs {
+        /* border: 1px solid red;  */
+        flex: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width:465px) {
+    .contact-btn{
+        /* display: inline-block; */
+        width:150px;
+        padding: 5px 0 5px 0;
+    }
+    .tab-button {
+        padding: 5px 5px;
+       
+    }
+
+}    
